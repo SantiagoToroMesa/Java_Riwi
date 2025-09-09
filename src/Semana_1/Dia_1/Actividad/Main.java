@@ -26,8 +26,23 @@ public class Main {
         String primeraVezInput = sc.nextLine().trim().toUpperCase();
         boolean primeraVez = !primeraVezInput.isEmpty() && primeraVezInput.charAt(0) == 'S';
 
-        System.out.println("Ingrese el plan (Basico, Premium, Plus)");
-        String plan = sc.nextLine().trim();
+        System.out.println("Ingrese su plan (1.Basico, 2.Premium, 3.Plus)");
+        int seleccion = sc.nextInt();
+        String plan = "";
+        enum planOptions {BASICO, PREMIUM, PLUS}
+        switch (seleccion){
+            case 1:
+                plan = planOptions.BASICO.name();
+                break;
+            case 2:
+                plan = planOptions.PREMIUM.name();
+                break;
+            case 3:
+                plan = planOptions.PLUS.name();
+                break;
+        }
+
+
         if (!plan.isEmpty()) {
             plan = plan.substring(0, 1).toUpperCase() + plan.substring(1).toLowerCase();
         }
