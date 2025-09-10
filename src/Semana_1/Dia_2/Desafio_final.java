@@ -26,6 +26,7 @@ public class Desafio_final {
             }
         }
         System.out.println("El ganador es: " + ganador + " con un total de: " + maximo + " piezas de oro.");
+
     }
 
 }
