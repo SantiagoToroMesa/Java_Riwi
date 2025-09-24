@@ -1,6 +1,7 @@
 package Semana_2.Dia_1;
 
 import javax.swing.*;
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Fruit {
@@ -8,9 +9,9 @@ public class Fruit {
     double weight;
     String colour;
     boolean expired;
-    Date expiration_date;
+    LocalDate expiration_date;
 
-    public Fruit(String fruitName, double fruitWeight, String fruitColour,boolean fruitExpired, Date fruitExpiration_date){
+    public Fruit(String fruitName, double fruitWeight, String fruitColour,boolean fruitExpired, LocalDate fruitExpiration_date){
         this.name = fruitName;
         this.weight = fruitWeight;
         this.colour = fruitColour;
@@ -35,4 +36,6 @@ public class Fruit {
             }
         }
     }
+
+
 }
